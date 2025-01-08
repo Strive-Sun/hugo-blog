@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://lacie-3d4.pages.dev/'
 languageCode = 'zh-cn'
 title = 'My Blog'
 theme = 'PaperMod'
