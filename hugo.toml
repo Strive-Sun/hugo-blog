@@ -75,3 +75,8 @@ enableEmoji = true
   [params.assets]
     favicon = "/images/icon.png"
     apple_touch_icon = "/images/icon.png"
+
+  [params.gallery]
+    enabled = true
+    # 修改图片目录配置，移除 static 前缀
+    dir = "gallery"
