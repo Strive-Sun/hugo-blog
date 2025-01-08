@@ -1,0 +1,97 @@
+{{- define "main" }}
+
+<article class="post-single">
+    <header class="post-header">
+        <h1 class="post-title">{{ .Title }}</h1>
+        <div class="post-description">
+            {{ .Content }}
+        </div>
+    </header>
+
+    <div class="archive-content">
+        {{ range .Site.RegularPages.GroupByPublishDate "2006" }}
+        <div class="archive-year">
+            <h2>{{ .Key }}</h2>
+            {{ range .Pages.GroupByPublishDate "January" }}
+            <div class="archive-month">
+                <h3>{{ .Key }}</h3>
+                <ul class="archive-posts">
+                    {{ range .Pages }}
+                    <li class="archive-post">
+                        <time class="archive-date" datetime="{{ .Date.Format "2006-01-02" }}">
+                            {{ .Date.Format "01-02" }}
+                        </time>
+                        <a class="archive-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
+            {{ end }}
+        </div>
+        {{ end }}
+    </div>
+</article>
+
+<style>
+.archive-content {
+    margin-top: 2rem;
+}
+
+.archive-year {
+    margin-bottom: 2rem;
+}
+
+.archive-year h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+.archive-month {
+    margin-left: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.archive-month h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    color: var(--secondary);
+}
+
+.archive-posts {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.archive-post {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.archive-post:hover {
+    background-color: var(--entry);
+}
+
+.archive-date {
+    font-family: monospace;
+    color: var(--secondary);
+    margin-right: 1rem;
+    min-width: 4rem;
+}
+
+.archive-title {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.archive-title:hover {
+    text-decoration: underline;
+}
+</style>
+
+{{- end }} 
