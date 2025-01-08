@@ -1,0 +1,72 @@
+baseURL = 'http://example.org/'
+languageCode = 'zh-cn'
+title = 'My Blog'
+theme = 'PaperMod'
+
+# 启用表情符号
+enableEmoji = true
+
+# 菜单配置
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "文章"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "archives"
+    name = "归档"
+    url = "/archives/"
+    weight = 20
+  [[menu.main]]
+    identifier = "tags"
+    name = "标签"
+    url = "/tags/"
+    weight = 30
+
+[params]
+  # 主题默认设置
+  defaultTheme = "auto"
+  # 显示分享按钮
+  ShowShareButtons = true
+  # 显示文章阅读时间
+  ShowReadingTime = true
+  # 显示目录
+  ShowToc = true
+  # 自动展开目录
+  TocOpen = false
+  # 显示代码复制按钮
+  ShowCodeCopyButtons = true
+  
+  # 首页设置
+  [params.homeInfoParams]
+    Title = "不积硅步，无以至千里 👋"
+    Content = """
+    欢迎来到我的博客！这里是我的个人技术博客，主要分享编程和技术相关的文章。
+    
+    不积跬步，无以至千里；不积小流，无以成江海。
+    """
+  
+  # 社交链接
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com"
+
+  # 首页模式
+  [params.profileMode]
+    enabled = true
+    title = "不积硅步"
+    subtitle = "不积跬步，无以至千里；不积小流，无以成江海。"
+    imageUrl = "/images/icon.png"
+    imageTitle = "我的头像"
+    imageWidth = 120
+    imageHeight = 120
+    
+  # 列表视图
+  [params.listView]
+    enabled = true
+    
+  # 页面设置
+  [params.assets]
+    favicon = "/images/icon.png"
+    apple_touch_icon = "/images/icon.png"
