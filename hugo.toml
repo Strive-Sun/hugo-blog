@@ -1,6 +1,6 @@
 baseURL = 'https://lacie-3d4.pages.dev/'
 languageCode = 'zh-cn'
-title = 'My Blog'
+title = '泡泡'
 theme = 'PaperMod'
 
 # 启用表情符号
@@ -45,7 +45,7 @@ enableEmoji = true
   
   # 首页设置
   [params.homeInfoParams]
-    Title = "不积硅步，无以至千里 👋"
+    Title = "泡泡 👋"
     Content = """
     欢迎来到我的博客！这里是我的个人技术博客，主要分享编程和技术相关的文章。
     
@@ -60,7 +60,7 @@ enableEmoji = true
   # 首页模式
   [params.profileMode]
     enabled = true
-    title = "不积硅步"
+    title = "泡泡"
     subtitle = "不积跬步，无以至千里；不积小流，无以成江海。"
     imageUrl = "/images/icon.png"
     imageTitle = "我的头像"
