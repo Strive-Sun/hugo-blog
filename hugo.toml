@@ -23,6 +23,11 @@ enableEmoji = true
     name = "标签"
     url = "/tags/"
     weight = 30
+  [[menu.main]]
+    identifier = "gallery"
+    name = "相册"
+    url = "/gallery/"
+    weight = 40
 
 [params]
   # 主题默认设置

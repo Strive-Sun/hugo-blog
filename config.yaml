@@ -1,0 +1,6 @@
+name: hugo-blog
+build:
+  environment:
+    HUGO_VERSION: 0.121.1
+  commands:
+    - hugo --minify 
