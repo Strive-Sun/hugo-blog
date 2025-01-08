@@ -62,7 +62,7 @@ enableEmoji = true
     enabled = true
     title = "泡泡"
     subtitle = "不积跬步，无以至千里；不积小流，无以成江海。"
-    imageUrl = "/images/icon.png"
+    imageUrl = "https://lacie-3d4.pages.dev/images/icon.png"
     imageTitle = "我的头像"
     imageWidth = 120
     imageHeight = 120
@@ -73,8 +73,8 @@ enableEmoji = true
     
   # 页面设置
   [params.assets]
-    favicon = "/images/icon.png"
-    apple_touch_icon = "/images/icon.png"
+    favicon = "https://lacie-3d4.pages.dev/images/icon.png"
+    apple_touch_icon = "https://lacie-3d4.pages.dev/images/icon.png"
 
   [params.gallery]
     enabled = true
